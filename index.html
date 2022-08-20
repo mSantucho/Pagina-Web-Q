@@ -24,7 +24,7 @@
                             <li><a href="#inicio">INICIO</a></li>
                             <li><a href="#sobremi">SOBRE MI</a></li>
                             <li><a href="#diseño">DISEÑOS</a></li>
-                            <li><a href="#productos">PRODUCTOS</a></li>
+                            <li><a href="#producto">PRODUCTOS</a></li>
                             <li><a href="#contacto">CONTACTO</a></li>
                         </ul>
                     </nav>
@@ -86,38 +86,40 @@
     <!-- SECCION PRODUCTOS -->
     <section id="producto">
 
-        <h2 class="titulo"> Mis Productos</h2>
-        <h3 class="titulo-seccion">Marcos</h3>
+        <h2 class="titulo-seccion"> Mis Productos</h2>
+        <h3 class="titulo">Marcos</h3>
         <div class="fila">
             <div class="productos">
-                <img src="" alt="" class="marco">
+                <img src="img/cuadro.jpg" alt="" class="marco">
                 <hr>
-                <h4>Marco 10X10</h4>
+                <h4>Marco 10 X 10</h4>
             </div>
             <div class="productos">
-                <img src="" alt="" class="marco">
+                <img src="img/cuadro.jpg" alt="" class="marco">
                 <hr>
-                <h4>Marco 10X10</h4>
+                <h4>Marco 10 X 15</h4>
             </div>
             <div class="productos">
-                <img src="" alt="" class="marco">
+                <img src="img/cuadro.jpg" alt="" class="marco">
                 <hr>
-                <h4>Marco 10X10</h4>
+                <h4>Marco 15 X 15</h4>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="productos">
+                <img src="img/cuadro.jpg" alt="" class="marco">
+                <hr>
+                <h4>Marco 20 X 15</h4>
             </div>
             <div class="productos">
-                <img src="" alt="" class="marco">
+                <img src="img/cuadro.jpg" alt="" class="marco">
                 <hr>
-                <h4>Marco 10X10</h4>
+                <h4>Marco 20 X 20</h4>
             </div>
             <div class="productos">
-                <img src="" alt="" class="marco">
+                <img src="img/cuadro.jpg" alt="" class="marco">
                 <hr>
-                <h4>Marco 10X10</h4>
-            </div>
-            <div class="productos">
-                <img src="" alt="" class="marco">
-                <hr>
-                <h4>Marco 10X10</h4>
+                <h4>Marco 30 X 30</h4>
             </div>
         </div>
     </section>
@@ -126,19 +128,22 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="https://formspree.io/f/xknendnw"
+            method="POST">
+            <label>
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="Nombre">
+                    <input type="email" placeholder="Direccion de Email" class="input-mitad" name="Email">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" placeholder="Tema..." class="input-full" name="subject">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
                 </div>
 
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </label>
             </form>
         </div>
     </section>
